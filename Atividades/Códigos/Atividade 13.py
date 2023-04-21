@@ -6,10 +6,16 @@
 
 # 1 - Crie um programa em Python que pede um número inteiro ao usuário e calcule seu fatorial.
 
-class fatorial():
+def fatorial():
 
-    def __init__(self):
+    num = int(input("Informe um número inteiro para que seu fatorial seja calculado: "))
 
-        num = int(input("Informe um número: "))
+    result = 1
 
-    def calculo_fatorial():
+    for i in range(1, num + 1):
+
+        result *= i
+
+    return result
+
+print(fatorial())
